@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="root-testsuite">
+    <test name="Chrome Test" parallel="classes" thread-count="5" preserve-order="true" >
+        <parameter name="browser" value="chrome"></parameter>
+        <classes>
+            <class name="testngTest.TestParallelClass1"></class>
+            <class name="testngTest.TestParallelClass2"></class>
+        </classes>
+    </test>
+    <test name="FF Test" parallel="classes" thread-count="5" preserve-order="true" >
+        <parameter name="browser" value="FF"></parameter>
+        <classes>
+            <class name="testngTest.paramTest"></class>
+        </classes>
+    </test>
+    </suite>
